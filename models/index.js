@@ -2,7 +2,7 @@ require('dotenv').config();
 const mongoose = require('mongoose');
 
 // Better Practice to hid the mongo url
-const { MONGO_URL } = process.env;
+const URL = process.env.MONGO_URL || 'mongodb://localhost:27017/crane2_Dev';
 const configOptions = {
     useNewUrlParser: true,
     useCreateIndex: true,
@@ -10,7 +10,7 @@ const configOptions = {
     useFindAndModify: false,
 };
 
-mongoose.connect(MONGO_URL, configOptions)
+mongoose.connect(URL, configOptions)
     .then(() => console.log('MongoDB successfully connected...'))
     .catch(err => console.log('MongoDB connection error:', err));
 
