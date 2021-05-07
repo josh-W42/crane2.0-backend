@@ -1,7 +1,7 @@
 {
-  "name": "todo-sei-111-backend",
+  "name": "crane_2.0-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Just experimenting with MERN applications in the social media space. Wanted to update an older project.",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -14,13 +14,18 @@
   "dependencies": {
     "axios": "^0.21.1",
     "bcrypt": "^5.0.1",
+    "chai": "^4.3.4",
+    "cloudinary": "^1.25.1",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
+    "mocha": "^8.3.2",
     "mongoose": "^5.11.18",
+    "morgan": "^1.10.0",
     "node-fetch": "^2.6.1",
     "passport": "^0.4.1",
-    "passport-jwt": "^4.0.0"
+    "passport-jwt": "^4.0.0",
+    "socket.io": "^4.0.2"
   }
 }
